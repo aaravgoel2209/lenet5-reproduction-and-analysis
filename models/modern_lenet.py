@@ -1,9 +1,9 @@
-from torch.nn import Module
 from torch import nn
 
-class Model(Module):
+
+class ModernLeNet(nn.Module):
     def __init__(self):
-        super(Model, self).__init__()
+        super(ModernLeNet, self).__init__()
         self.conv1 = nn.Conv2d(1, 6, 5)
         self.relu1 = nn.ReLU()
         self.pool1 = nn.MaxPool2d(2)
@@ -15,7 +15,7 @@ class Model(Module):
         self.fc2 = nn.Linear(120, 84)
         self.relu4 = nn.ReLU()
         self.fc3 = nn.Linear(84, 10)
-        self.relu5 = (nn.ReLU())
+
     def forward(self, x):
         y = self.conv1(x)
         y = self.relu1(y)
@@ -29,5 +29,4 @@ class Model(Module):
         y = self.fc2(y)
         y = self.relu4(y)
         y = self.fc3(y)
-        y = self.relu5(y)
         return y

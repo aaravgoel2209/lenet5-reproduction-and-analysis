@@ -224,5 +224,7 @@ __marimo__/
 
 
 # Generated model checkpoints and prediction plots
-/models/
+/models/*.pkl
+/results/checkpoints/*
+!/results/checkpoints/.gitkeep
 /predictions.png
