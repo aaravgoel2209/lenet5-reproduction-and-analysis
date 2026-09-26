@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local editor and agent settings
+/.idea/
+/.vscode/
+/.codex/
+
+# Downloaded MNIST datasets
+/train/MNIST/
+/test/MNIST/
+
+# Generated model checkpoints and prediction plots
+/models/
+/predictions.png
