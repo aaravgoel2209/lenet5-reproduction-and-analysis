@@ -222,9 +222,6 @@ __marimo__/
 /.vscode/
 /.codex/
 
-# Downloaded MNIST datasets
-/train/MNIST/
-/test/MNIST/
 
 # Generated model checkpoints and prediction plots
 /models/
